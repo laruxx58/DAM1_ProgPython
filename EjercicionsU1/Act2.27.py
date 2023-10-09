@@ -7,4 +7,4 @@ precio=float(input("Precio del producto: "))
 unidades=int(input("Nº de unidades: "))
 total=precio*unidades
 
-print()
+print("{} {:09.2f} {:03d} {:011.2f}" .format(name, precio, unidades, total))
