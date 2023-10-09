@@ -12,4 +12,4 @@ print(num)
 n= float(input("Introduce un numero: "))
 suma=n
 n=float(input("Introduce otro: "))
-suma= n
+suma= n 
