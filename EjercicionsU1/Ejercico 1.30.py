@@ -22,4 +22,5 @@ while incremento<0 and serie<0 :
     print("Vuelve a introducir el incremento (mayor que 0): ")
     print("Vuelve a introducir el numero de la serie (mayor que 0): ")
 for i in range(num,serie,incremento) :
-    print("SERIE =>", i)
+    resultado = i
+    print("SERIE=> ", resultado)
