@@ -3,5 +3,5 @@
 # separados por comas, y muestre por pantalla cada uno de los productos en una línea distinta.
 lista=input("Lista de la compra: ")
 salto='\n'
-listaseparada=lista.replace(input(", ") , salto )
+listaseparada= lista.replace(", " , salto )
 print(listaseparada)

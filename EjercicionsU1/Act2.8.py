@@ -8,7 +8,7 @@ print(num)
 
 
 
-#sin bucle:
+#sin bucle:(no termine de corregirlo)
 n= float(input("Introduce un numero: "))
 suma=n
 n=float(input("Introduce otro: "))
