@@ -8,29 +8,33 @@
 #	Lee y
 
 #	Si (x >= y) entonces
-#		numIni = x - 1
+#		numIni = x 
 #		numFin = y
 #	Sino
-#		numIni = y - 1
+#		numIni = y
 #		numFin = x
 		
-#	Para i en (numIni...numFin) hacer
-#		Escribe i + 
+#	mientras (numIni<=numFin) hacer
+#		Escribe numIni 
 #		Si (numIni != numFin) entonces
 #			Escribe "-"
+#       numIni = numIni + 1
 
 #Fin
 
 
-num1=int(input("Introduce un número: "))
-num2=int(input("Introduce otro: "))
-if num1 >= num2 :
-    numIni= num1 - 1 
-    numFin = num2
+x=int(input("Introduce un número: "))
+y=int(input("Introduce otro: "))
+
+if x >= y :
+    numIni= y
+    numFin = x
 else:
-    numIni = num2 - 1 
-    numFin = num1 
-for i in range(numFin, numFin) :
-    print(i)
+    numIni = x
+    numFin = y
+    
+while numIni <= numFin :
+    print(numIni, end="")
     if numIni != numFin :
-        print("-")
+        print("-", end="")
+    numIni+=1
