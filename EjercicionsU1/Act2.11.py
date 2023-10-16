@@ -16,4 +16,4 @@ else:
 #sin bucle
 n=int(input("Introduce un numero entero positivo: "))
 resultado=n*(n+1)/2
-print("La suma de los primeros enteros e¡hasta " , n, "es" , resultado )
+print("La suma de los primeros enteros hasta " , n, "es" , resultado )
