@@ -30,9 +30,59 @@ Ejemplo 3:
 
 
 Inicio
-    escribe "Introduzca los 
+    escribe "Introduzca los trabajados:"
+    lee diastrabajados
     
+    mientras dias < 0 entonces 
+        escribe "*** Error - el valor no puede ser negativo ***"
+        
+    años= diastrabajados / 365
+    diasrestantes= diastrabajados % 365
+    meses= diasrestantes / 30
+    dias = diasrestantes % 30
+    
+    si años == 1 :
+        año="año"
+    sino
+        año="años"
+
+    si dias == 1 :
+        dia = "día"
+    sino
+        dia = "días"
+
+    si meses = 1 entonces
+        mes = "mes"
+    sino
+        mes= "meses"
+    
+    escribe "Ha cotizado " + años + año + ", " + meses + mes +" y " + dias + dia "." "
 Fin
 """
 
+diastrabajados=int(input("Introduzca los días trabajados: "))
 
+while diastrabajados < 0 :
+    print("*** Error - el valor no puede ser negativo***")
+    
+años= diastrabajados // 365
+diasrestantes= diastrabajados % 365
+meses= diasrestantes // 30
+dias = diasrestantes % 30
+
+if años == 1 :
+    año="año"
+else:
+    año="años"
+
+if dias == 1 :
+    dia = "día"
+else:
+    dia = "días"
+
+if meses == 1:
+    mes = "mes"
+else:
+    mes= "meses"
+
+print("Ha cotizado " , años , año , ", " , meses , mes ," y " , dias , dia , ".")
